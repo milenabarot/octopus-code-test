@@ -1,0 +1,17 @@
+@use "_variables.scss" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  &-octopusLogo {
+    width: 45%;
+  }
+  &-basketWrap {
+    display: flex;
+    justify-content: center;
+    &-icon {
+      height: 50px;
+      width: 45%;
+    }
+  }
+}

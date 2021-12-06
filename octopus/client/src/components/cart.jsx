@@ -1,15 +1,11 @@
 import React from "react";
+import "../styles/cart.scss";
 
 const Cart = (props) => {
   return (
     <div>
-      <h1>{props.product.name}</h1>
       <p>{props.product.price}</p>
-      <button
-        onClick={props.increment}
-        type="button"
-        disabled={props.quantity + props.basket >= props.product.quantity}
-      >
+      <button onClick={props.increment} type="button">
         +
       </button>
       <p>Qty</p>
@@ -21,11 +17,7 @@ const Cart = (props) => {
       >
         -
       </button>
-      <button
-        type="button"
-        onClick={props.addToCart}
-        disabled={props.basket === props.product.quantity}
-      >
+      <button type="button" onClick={props.addToCart}>
         Add to cart
       </button>
     </div>
