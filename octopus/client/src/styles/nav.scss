@@ -4,6 +4,10 @@
   &-octopusLogo {
     width: 45%;
     margin-left: 2%;
+    @media only screen and (min-width: 600px) {
+      width: 25%;
+      margin-top: 10px;
+    }
   }
   &-basket {
     display: flex;
@@ -18,6 +22,10 @@
     &-icon {
       height: 50px;
       width: 43%;
+      @media only screen and (min-width: 600px) {
+        height: 60px;
+        width: 50%;
+      }
     }
 
     &-quantity {

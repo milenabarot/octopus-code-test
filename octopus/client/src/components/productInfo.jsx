@@ -25,11 +25,11 @@ const productInfo = (props) => {
           <p>{props.product.colour}</p>
         </div>
       </div>
-      <div className="productInfo-companyInfo">
+      <p className="productInfo-companyInfo">
         Octopus Energy Ltd is a company registered in England and Wales. <br />
         Registered number: 09263424. Registered office: 33 Holborn, London, EC1N
         2HT. Trading office: 20-24 Broadwick Street, London, W1F 8HT
-      </div>
+      </p>
     </section>
   );
 };

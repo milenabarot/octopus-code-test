@@ -36,7 +36,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/Productpage">
+        <Route path="/productpage">
           <ApolloProvider client={client}>
             <Query query={GET_PRODUCT}>
               {({ loading, error, data }) => {
@@ -57,3 +57,6 @@ const App = () => {
 };
 
 export default App;
+
+/*******TO DO*******/
+// -

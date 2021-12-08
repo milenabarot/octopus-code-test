@@ -6,7 +6,7 @@ const Home = (props) => {
   return (
     <div className="home">
       <h1>Octopus Energy </h1>
-      <Link to="/Productpage" className="home-productPagelink">
+      <Link to="/productpage" className="home-productPagelink">
         Go to product page
       </Link>
     </div>

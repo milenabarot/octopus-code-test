@@ -4,6 +4,10 @@
   &-description {
     padding: 13px 20px 4px 20px;
     background-color: $dark-Blue;
+    @media only screen and (min-width: 600px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
 
     p {
       font-size: 15px;
@@ -12,6 +16,10 @@
 
   &-specifications-wrap {
     padding: 0px 20px 4px 20px;
+    @media only screen and (min-width: 600px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   }
   &-specifications {
     display: flex;
@@ -31,5 +39,9 @@
     background-color: $dark-Blue;
     color: rgba(166, 205, 218, 0.885);
     font-size: 11px;
+    @media only screen and (min-width: 600px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   }
 }
