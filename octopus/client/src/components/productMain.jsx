@@ -7,11 +7,11 @@ const ProductMain = (props) => {
       <img
         className="productMain-img"
         src={props.product.imgUrl}
-        // alt="An image of a {props.product.name}"
+        alt={`An image of a ${props.product.name}`}
       />
       <div>
         <h1 className="productMain-name">{props.product.name}</h1>
-        <p>
+        <p className="productMain-info">
           {props.product.power} // Packet of {props.product.quantity}
         </p>
       </div>

@@ -13,7 +13,9 @@ const Nav = (props) => {
           src={basketLogo}
           alt="A basket icon"
         />
-        <div title="Basket Items">{props.basket}</div>
+        <div className="nav-basketWrap-quantity" title="Basket Items">
+          {props.basket}
+        </div>
       </div>
     </div>
   );

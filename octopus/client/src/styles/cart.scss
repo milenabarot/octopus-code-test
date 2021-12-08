@@ -1,0 +1,73 @@
+@import "./variables";
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+
+  &-priceQuantityWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-price {
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 25px 0px;
+  }
+  &-quantityWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin: 0px;
+      text-transform: uppercase;
+      color: $secondary-blue;
+      font-size: 13px;
+    }
+  }
+  &-quantityButtonWrap {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-weight: bolder;
+  }
+
+  &-quantityButton {
+    background-color: $secondary-blue;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    margin: 0px 5px;
+
+    &-number {
+      font-weight: bolder;
+      font-size: 28px;
+    }
+  }
+
+  &-addToCartButtonWrap {
+    button {
+      padding: 7px;
+      font-size: 28px;
+      font-weight: bolder;
+      letter-spacing: 0;
+      color: white;
+      text-align: center;
+      background: $main-pink;
+      border: 2px solid $main-pink;
+      border-radius: 5px;
+      box-shadow: none;
+      transition: 0.3s ease-in-out;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        background: #dd5da4;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@use "_variables.scss" as *;
+@import "./variables";
 
 .productMain {
   padding: 0px 20px;
@@ -10,5 +10,10 @@
   }
   &-name {
     margin: 0px;
+  }
+  &-info {
+    color: $secondary-blue;
+    margin-top: 3px;
+    font-size: 13px;
   }
 }

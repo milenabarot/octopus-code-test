@@ -38,9 +38,6 @@ const Shop = (props) => {
         quantity={quantity}
       />
       <ProductInfo product={product} />
-
-      {/* to enable to test to pass with the product page */}
-      <a href="/Go to product page">Go to product page</a>
     </div>
   );
 };

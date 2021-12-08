@@ -32,16 +32,19 @@ const GET_PRODUCT = gql`
 
 const App = () => {
   return (
-    <ApolloProvider client={client}>
-      <Query query={GET_PRODUCT}>
-        {({ loading, error, data }) => {
-          if (loading) return <div>Loading....</div>;
-          if (error) return <div>Error....</div>;
+    <>
+      <ApolloProvider client={client}>
+        <Query query={GET_PRODUCT}>
+          {({ loading, error, data }) => {
+            if (loading) return <div>Loading....</div>;
+            if (error) return <div>Error....</div>;
 
-          return <Shop product={data.product} />;
-        }}
-      </Query>
-    </ApolloProvider>
+            return <Shop product={data.product} />;
+          }}
+        </Query>
+      </ApolloProvider>
+      <a href="/Go to product page">Go to product page</a>
+    </>
   );
 };
 
