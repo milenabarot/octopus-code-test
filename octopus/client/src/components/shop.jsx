@@ -3,7 +3,7 @@ import Nav from "../components/nav";
 import Cart from "../components/cart";
 import ProductInfo from "../components/productInfo";
 import ProductMain from "./productMain";
-import "../styles/shop.scss";
+import "../styles/home.scss";
 
 const Shop = (props) => {
   const { product } = props;
@@ -26,7 +26,7 @@ const Shop = (props) => {
   };
 
   return (
-    <div className="shop">
+    <main className="shop">
       <Nav basket={basket} product={product} />
       <ProductMain product={product} />
       <Cart
@@ -38,7 +38,7 @@ const Shop = (props) => {
         quantity={quantity}
       />
       <ProductInfo product={product} />
-    </div>
+    </main>
   );
 };
 

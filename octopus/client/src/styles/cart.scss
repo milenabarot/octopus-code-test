@@ -22,7 +22,7 @@
     p {
       margin: 0px;
       text-transform: uppercase;
-      color: $secondary-blue;
+      color: $mid-blue;
       font-size: 13px;
     }
   }
@@ -34,7 +34,7 @@
   }
 
   &-quantityButton {
-    background-color: $secondary-blue;
+    background-color: $mid-blue;
     border: none;
     cursor: pointer;
     color: white;
@@ -43,6 +43,11 @@
     font-size: 19px;
     font-weight: bolder;
     margin: 0px 5px;
+    min-width: 35px;
+
+    &:disabled {
+      background-color: $dark-Blue;
+    }
 
     &-number {
       font-weight: bolder;
@@ -50,24 +55,23 @@
     }
   }
 
-  &-addToCartButtonWrap {
-    button {
-      padding: 7px;
-      font-size: 28px;
-      font-weight: bolder;
-      letter-spacing: 0;
-      color: white;
-      text-align: center;
-      background: $main-pink;
-      border: 2px solid $main-pink;
-      border-radius: 5px;
-      box-shadow: none;
-      transition: 0.3s ease-in-out;
-      width: 100%;
-      cursor: pointer;
-      &:hover {
-        background: #dd5da4;
-      }
+  &-addToCartButton {
+    padding: 7px;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+    background: $pink;
+    border: 2px solid $pink;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: #dd5da4;
     }
   }
 }

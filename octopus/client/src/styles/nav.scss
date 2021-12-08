@@ -3,10 +3,18 @@
   justify-content: space-between;
   &-octopusLogo {
     width: 45%;
+    margin-left: 2%;
   }
-  &-basketWrap {
+  &-basket {
     display: flex;
     justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+
     &-icon {
       height: 50px;
       width: 43%;

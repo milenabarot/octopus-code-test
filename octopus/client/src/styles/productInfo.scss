@@ -1,0 +1,35 @@
+@import "./variables";
+
+.productInfo {
+  &-description {
+    padding: 13px 20px 4px 20px;
+    background-color: $dark-Blue;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  &-specifications-wrap {
+    padding: 0px 20px 4px 20px;
+  }
+  &-specifications {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    h2 {
+      margin-bottom: 13px;
+    }
+    p {
+      flex-basis: 50%;
+      margin: 10px 0px;
+    }
+  }
+
+  &-companyInfo {
+    padding: 15px 12px 15px 10px;
+    background-color: $dark-Blue;
+    color: rgba(166, 205, 218, 0.885);
+    font-size: 11px;
+  }
+}

@@ -5,19 +5,19 @@ import mainLogo from "../assets/logo.svg";
 
 const Nav = (props) => {
   return (
-    <div className="nav">
+    <nav className="nav">
       <img className="nav-octopusLogo" src={mainLogo} alt="Octopus logo" />
-      <div className="nav-basketWrap">
+      <button type="button" className="nav-basket">
         <img
-          className="nav-basketWrap-icon"
+          className="nav-basket-icon"
           src={basketLogo}
-          alt="A basket icon"
+          alt="The shopping basket"
         />
-        <div className="nav-basketWrap-quantity" title="Basket Items">
+        <span className="nav-basket-quantity" title="Basket Items">
           {props.basket}
-        </div>
-      </div>
-    </div>
+        </span>
+      </button>
+    </nav>
   );
 };
 

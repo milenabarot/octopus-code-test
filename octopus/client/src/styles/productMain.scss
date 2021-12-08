@@ -2,17 +2,20 @@
 
 .productMain {
   padding: 0px 20px;
+  background-color: $dark-Blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   &-img {
     width: 82%;
+    max-width: 430px;
+    max-height: 510px;
   }
   &-name {
     margin: 0px;
   }
   &-info {
-    color: $secondary-blue;
+    color: $mid-blue;
     margin-top: 3px;
     font-size: 13px;
   }

@@ -2,10 +2,15 @@ import React from "react";
 import "../styles/cart.scss";
 
 const Cart = (props) => {
+  const price = props.product.price;
+  const priceArray = Array.from(String(price), Number);
+  priceArray.splice(2, 0, ".");
+  const formattedPrice = priceArray.join("");
+
   return (
-    <div className="cart">
+    <section className="cart">
       <div className="cart-priceQuantityWrap">
-        <p className="cart-price">{props.product.price}</p>
+        <p className="cart-price">{formattedPrice}</p>
         <div className="cart-quantityWrap">
           <p>qty</p>
           <div className="cart-quantityButtonWrap">
@@ -35,14 +40,14 @@ const Cart = (props) => {
       </div>
       <div className="cart-addToCartButtonWrap">
         <button
-          classname="cart-addToCartButton"
+          className="cart-addToCartButton"
           type="button"
           onClick={props.addToCart}
         >
           Add to cart
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
