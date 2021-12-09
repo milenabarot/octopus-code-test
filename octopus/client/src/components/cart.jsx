@@ -4,7 +4,7 @@ import "../styles/cart.scss";
 const Cart = (props) => {
   const price = props.product.price;
   const priceArray = Array.from(String(price), Number);
-  priceArray.splice(2, 0, ".");
+  priceArray.splice(priceArray.length - 2, 0, ".");
   const formattedPrice = priceArray.join("");
 
   return (

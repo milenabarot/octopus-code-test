@@ -58,5 +58,14 @@ const App = () => {
 
 export default App;
 
-/*******TO DO*******/
-// -
+/*******TO DO - Next steps*******/
+
+// •	I would add local storage to store the basket contents, however this would only
+//    work if I also added functionality to empty the basket, otherwise when the page is refreshed the
+//    quantity would still be there with no ability to empty the basket and start fresh.
+// •	Functionality to empty and edit the basket – could be part of a drop down menu/pop out
+//    that appears when you click / hover on the basket icon.
+// •	I would add mixins, for when there is repeated styling across the files.
+// •	Could also use the React Toastify library to signify when an item has been added to the basket.
+// •	Styling of the price that is pulled through as a prop. I would split the price up, put
+//    them in separate p tags & apply a smaller font size to the ‘99’ part of the number.
